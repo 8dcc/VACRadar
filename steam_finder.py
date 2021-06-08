@@ -48,7 +48,7 @@ def main():
 				sys.stdout.flush()
 				print(" [+] Request for " + str(ProfileID) + " is good.")
 				with open("SteamFound.log", "a") as SteamFound:  # Append to the log file
-					SteamFound.write("[%s] VACProfile found: %s" % (time.strftime("%d %b %Y - %H:%M:%S", time.gmtime()), ProfileID))
+					SteamFound.write("[%s] Steam profile found: %s" % (time.strftime("%d %b %Y - %H:%M:%S", time.gmtime()), ProfileID))
 					SteamFound.write("\n")
 				if last == 1:
 					sys.stdout.write(" [-] Request for ")
