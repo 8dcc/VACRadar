@@ -52,7 +52,7 @@ def main():
 				sys.stdout.write('\b'*25)
 				sys.stdout.flush()
 				last1 = 0
-			if "Error" not in str(souped.title) and "ban" in str(souped.text):
+			if "Error" not in str(souped.title) and " ban " in str(souped.text):
 				if last == 0:
 					print()
 				sys.stdout.write('\b'*50)
